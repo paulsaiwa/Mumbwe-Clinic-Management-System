@@ -16,18 +16,15 @@
 		</div>
 
 		
-		<div class="w3-container w3-center" id="login">
+		<div class="w3-container w3-center w3-card-4" id="login">
 		  <p>
-		  	<form class="w3-container ">
+		  	<form class="w3-container" method="POST" action="index.php">
 		  		<label>First Name</label>
-				<input class="w3-input w3-center" type="text" name="username" id="inp" >
+				<input class="w3-input w3-center" type="text" name="username" id="inp" autocomplete="off"  autocomplete="on">
 				<label>Last Name</label>
-				<input class="w3-input" type="text" name="password" id="inp">
+				<input class="w3-input" type="password" name="password" id="inp" autocomplete="off">
 				<input class="w3-btn " type="reset" name="reset" value="Cancel">
 				<input class="w3-btn" type="submit" name="login" value="Login">
-
-				
-
 		</form>
 		  </p>
 		</div>
@@ -37,3 +34,6 @@
 		</div>
 
 </body>
+</html>
+
+<?php include_once 'php_code/login.php';  ?>
